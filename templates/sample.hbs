@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Achievement</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f3f3f3;
+        }
+        .certificate {
+            border: 10px solid #ddd;
+            padding: 20px;
+            width: 70vh;
+            height: 90vh;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .date {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate">
+        <div class="title">Certificate of Achievement</div>
+        <p>This is to certify that</p>
+        <div class="name">{{name}}</div>
+        <p>has successfully completed the course.</p>
+        <div class="date">{{date}}</div>
+    </div>
+</body>
+</html>
